@@ -36,7 +36,6 @@ export default class App extends React.Component {
     event.preventDefault();
     var title = this.state.title;
     var newTodos = this.state.todos.concat({ title: title, done: false });
-    localStorage.setItem('newTodos', JSON.stringify(newTodos));
     this.setState({ title: '', todos: newTodos });
   }
 
